@@ -11,22 +11,23 @@ On 19.04, I didn't even want to mess with trying to install.  I wanted a one sto
 I found these instructions and modified them:
 http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/
 
-WARNING:
+**WARNING:**
 I DID NOT INCLUDE A BLANK hamster.db - for whatever reason running it here without that causes it to crash instead of creating a hamster.db  
 
-SETUP
-Install docker (I am currently using 19.03)
-Clone the repo
-Provide a hamster.db
-docker build -t hamster . 
-docker volume create hamsterdb
+**SETUP**
+- Install docker (I am currently using 19.03)
+- Clone the repo
+- Provide a hamster.db
+- docker build -t hamster . 
+- docker volume create hamsterdb
 
 I use the following shell script to launch for my personal user:
+```
 #!/bin/bash
 sudo docker run -ti --rm \
        -e DISPLAY=$DISPLAY \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
        -v hamsterdb:/home/developer/.local/share/hamster-applet \
         hamster
-
+```
 The docker volume will reside in your volumes directory where you can back it up if you like.  On linux that is normally /var/lib/docker/volumes
