@@ -40,5 +40,5 @@ The docker volume will reside in your volumes directory where you can back it up
 **TODO**
 
 - Make less layers
-- Related to above: make a multistage build
+- Related to above: make a multistage build?
 - Test hamster.db creation when it isn't provided
