@@ -37,7 +37,7 @@ sudo docker run -ti --rm \
 ```
 The docker volume will reside in your volumes directory where you can back it up if you like.  On linux that is normally /var/lib/docker/volumes
 
-** TODO **
+**TODO**
 
 - Make less layers
 - Related to above: make a multistage build
