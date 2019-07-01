@@ -11,7 +11,8 @@ RUN apt -y install libcanberra-gtk-module sudo
 RUN apt-get install -y tzdata
 RUN ln -fs /usr/share/zoneinfo/America/Chicago /etc/localtime
 RUN dpkg-reconfigure --frontend noninteractive tzdata
-
+# I run scripts to push my time automatically to intervals, and need certs.  Yes this made another layer :(
+RUN apt-get install ca-certificates
 # Replace 1000 with your user / group id
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/developer && \
