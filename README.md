@@ -42,3 +42,4 @@ The docker volume will reside in your volumes directory where you can back it up
 - Make less layers
 - Related to above: make a multistage build?
 - Test hamster.db creation when it isn't provided
+- Possible to only add some packages ca-certificates if an option is set in ARG or ENV?
