@@ -1,7 +1,7 @@
 # docker-hamster
 
-**2020-05-19 Update**
-Just ran this on 20.04 and it seemed to work with no issues
+**2020-05-19_Update**
+Just ran this on 20.04 and it seemed to work with one issue - the hamster-applet folder in .local/share has the wrong permissions.  I fixed it manually but have not fixed the docker file yet
 
 **Intro**
 run hamster time tracker in docker in newer versions of ubuntu
