@@ -1,9 +1,9 @@
 # docker-hamster
 
-** 2020-05-19 Update **
+**2020-05-19 Update**
 Just ran this on 20.04 and it seemed to work with no issues
 
-** Intro **
+**Intro**
 run hamster time tracker in docker in newer versions of ubuntu
 
 This is a work in progress, currently, it just works and that is good enough for now.  Feel free to submit improvements.  I have only been using it for one day and so far have not hit any showstoppers
